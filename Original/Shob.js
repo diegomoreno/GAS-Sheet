@@ -67,6 +67,7 @@ class Shob {
   writeData (options) {
     // convert data to values and write to sheet
     const data = (options && options.data) || this.data
+    this.data = data;
     this.setValues ({data})
     this.writeValues ()
   }
